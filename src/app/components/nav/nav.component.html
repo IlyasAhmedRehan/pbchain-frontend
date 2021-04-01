@@ -1,0 +1,55 @@
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>
+      <a mat-button routerLink="/add-property" routerLinkActive="active"> Submit Property </a>  
+    </mat-toolbar>
+    <mat-nav-list>
+      <mat-divider></mat-divider>
+      <!-- <div *ngFor="let p of path_details; let i=index">
+        <a mat-list-item routerLink="{{p.path}}" routerLinkActive="active" (click)="set_current()">{{p.name}}</a>
+        <mat-divider></mat-divider>
+      </div> -->
+      <a mat-list-item routerLink="/" routerLinkActive="active">Home</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/listing" routerLinkActive="active">Browse Properties</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/calculator" routerLinkActive="active">Pricing</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/blogs" routerLinkActive="active">Blogs</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/contact" routerLinkActive="active">Contact US</a>
+      
+
+
+
+      <mat-divider></mat-divider>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar style="height: 6pc;">
+      <!-- <span><img src="asset/img/PBChain.png"></span> -->
+      <span class="text-uppercase font-weight-bold" >PBChain</span>
+      <p style="margin-top: 5pc; margin-left: -5.66pc;">Property Blockchain Application</p>
+      <span class="example-spacer"></span>
+      <button mat-button routerLink="/login" routerLinkActive="active">Sign In</button>
+      <button mat-button routerLink="/register" routerLinkActive="active">Register</button>
+    </mat-toolbar>
+    <!-- <mat-toolbar color="primary"> -->
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon"> <img src="assets/img/icons/menu.png"> </mat-icon>
+      </button>
+      <!-- <span class="text-uppercase font-weight-bold" *ngIf="current">{{current}}</span> -->
+    <!-- </mat-toolbar> -->
+    <router-outlet></router-outlet>
+    <!-- <app-footer></app-footer> -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
