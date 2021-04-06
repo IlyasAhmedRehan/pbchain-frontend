@@ -1,65 +1,63 @@
 .content-container {
-  margin : 20px;
+    margin: 20px;
 }
-  
-  .content-container ul {
-  margin : 5px;
-  }
-  
-  .content-container li {
-  margin : 10px;
-  font-size: medium;
-  color: rgba(0,0,0,.87);
-  }
+
+.content-container ul {
+    margin: 5px;
+}
+
+.content-container li {
+    margin: 10px;
+    font-size: medium;
+    color: rgba(0, 0, 0, .87);
+}
 
 .profile {
-  margin: auto;
-  padding: 80px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+    margin: auto;
+    padding: 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .profile-card {
     display: flex;
     background-position: center;
-    width : 60%;
+    width: 60%;
 }
 
 .profile-card img {
-    margin : auto;
-    width : 300px;
-    height : auto
+    margin: auto;
+    width: 300px;
+    height: auto
 }
 
-
-  .hor {
+.hor {
     margin-top: 30px;
     margin-bottom: 100px;
     margin-right: 5px;
     margin-left: 5px;
-    
-} 
+}
 
 .hor mat-card-title {
     text-align: center;
 }
 
 .scroll {
-    padding : 10px;
-    overflow-x: scroll;
+    padding: 10px;
+    overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
 .scroll app-p-listing {
-    display : inline-block;
+    display: inline-block;
 }
 
 .example-card {
-  width : auto;
+    width: auto;
 }
 
 .example-card img {
-margin-left: auto;
+    margin-left: auto;
 }

@@ -28,10 +28,10 @@
     </div> -->
 
 <div class="hor">
-    <mat-card-title class="text-uppercase font-weight-bold">Featured Properties</mat-card-title>
-    <div fxLayout="row"  fxLayoutGap="15px" class="scroll" >
+    <mat-card-title class="text-uppercase font-weight-bold mt-5 mb-4">Featured Properties</mat-card-title>
+    <div fxLayout="row" fxLayoutGap="15px" class="scroll">
         <div *ngFor="let p of properties">
-            <app-p-listing [PDetails] = "p"></app-p-listing>
+            <app-p-listing [PDetails]="p"></app-p-listing>
         </div>
     </div>
 </div>

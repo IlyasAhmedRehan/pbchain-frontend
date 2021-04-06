@@ -3,20 +3,19 @@
     margin-bottom: 30px;
     margin-right: 5px;
     margin-left: 5px;
-    
-} 
+}
 
 .hor mat-card-title {
     text-align: center;
 }
 
 .scroll {
-    padding : 10px;
-    overflow-x: scroll;
+    padding: 10px;
+    overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
 .scroll app-p-listing {
-    display : inline-block;
+    display: inline-block;
 }

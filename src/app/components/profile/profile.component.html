@@ -1,25 +1,14 @@
-<div class="header-connect">
-            
-    <div class="col-md-5 col-sm-8  col-xs-12">
-        <div class="header-half header-call">
-            <p>
-                <span><i class="pe-7s-call"></i> +1 234 567 7890</span>
-                <span><i class="pe-7s-mail"></i> info@pbchain.com</span>
-            </p>
-        </div>
-    </div>
-  </div>      
-  <div class="page-head"> 
+<div class="page-head">
     <div class="container">
         <div class="row">
             <div class="page-head-content">
-                <h1 class="page-title">User Profile </h1>               
+                <h1 class="page-title">User Profile </h1>
             </div>
         </div>
     </div>
-  </div>
+</div>
 
-  
+
 
 <!-- 
 <div class="profile">
@@ -42,29 +31,39 @@
 <div class="profile">
     <mat-card class="example-card">
         <mat-card-header>
-            <mat-card-title>User Profile</mat-card-title>        
+            <mat-card-title>User Profile</mat-card-title>
         </mat-card-header>
         <img mat-card-image src="assets/img/team/team-1.jpg">
         <mat-card-content class="content-container">
             <ul>
-                <li><h3>User Profile ID : {{user.userId}} </h3></li>
-                <li><h3>Name : {{user.name}} </h3></li>
-                <li><h3>Email : {{user.email}} </h3></li>
-                <li><h3>Phone Number : {{user.pnum}} </h3></li>
-                <li><h3>Joined : {{user.createdAt}} </h3></li>
+                <li>
+                    <h3>User Profile ID : {{user.userId}} </h3>
+                </li>
+                <li>
+                    <h3>Name : {{user.name}} </h3>
+                </li>
+                <li>
+                    <h3>Email : {{user.email}} </h3>
+                </li>
+                <li>
+                    <h3>Phone Number : {{user.pnum}} </h3>
+                </li>
+                <li>
+                    <h3>Joined : {{user.createdAt}} </h3>
+                </li>
             </ul>
         </mat-card-content>
 
-      </mat-card>
+    </mat-card>
 
 </div>
 
 
 <div class="hor">
     <mat-card-title class="text-uppercase font-weight-bold">Added Properties</mat-card-title>
-    <div fxLayout="row"  fxLayoutGap="15px" class="scroll" >
+    <div fxLayout="row" fxLayoutGap="15px" class="scroll">
         <div *ngFor="let p of [1,2,3,4,5,6,7]">
-            <app-p-listing ></app-p-listing>
+            <app-p-listing></app-p-listing>
         </div>
     </div>
 </div>
@@ -78,4 +77,4 @@
 
 
 
-    <app-footer></app-footer>
+<app-footer></app-footer>
