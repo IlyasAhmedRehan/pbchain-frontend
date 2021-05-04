@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recent-property.component.css']
 })
 export class RecentPropertyComponent implements OnInit {
-
+  itemsPerSlide = 5;
+  singleSlideOffset = true;
   properties = [
     {
       city : "Karachi",

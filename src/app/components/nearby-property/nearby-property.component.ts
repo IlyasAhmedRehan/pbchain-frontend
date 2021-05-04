@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nearby-property.component.css']
 })
 export class NearbyPropertyComponent implements OnInit {
-
+  itemsPerSlide = 5;
+  singleSlideOffset = true;
   properties = [
     {
       city : "Karachi",

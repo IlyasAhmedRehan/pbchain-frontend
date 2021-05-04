@@ -1,8 +1,15 @@
 <div class="hor">
     <mat-card-title class="text-uppercase font-weight-bold mt-4 mb-5">Nearby Properties</mat-card-title>
-    <div fxLayout="row" fxLayoutGap="15px" class="scroll">
+    <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="singleSlideOffset" [startFromIndex]="6" [interval]="false">
+        <slide *ngFor="let p of properties">
+            <div>
+                <app-p-listing [PDetails]="p"></app-p-listing>
+            </div>
+        </slide>
+    </carousel>
+    <!-- <div fxLayout="row" fxLayoutGap="15px" class="scroll">
         <div *ngFor="let p of properties">
             <app-p-listing [PDetails]="p"></app-p-listing>
         </div>
-    </div>
+    </div> -->
 </div>

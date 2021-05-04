@@ -50,6 +50,8 @@ import { RecentPropertyComponent } from './components/recent-property/recent-pro
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -103,7 +105,9 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
     MatSelectModule,
     MatExpansionModule,
     MatGridListModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatCarouselModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

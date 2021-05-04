@@ -6,9 +6,10 @@ ngb-carousel {
 }
 
 ngb-carousel img {
-    width: 500px;
-    height : auto;
+    width: 100%;
+    height: auto;
     outline: none;
+    object-fit: cover;
 }
 
 ngb-carousel {
@@ -28,47 +29,45 @@ ngb-carousel {
     z-index: -1;
 }
 
-.carousel-item.active{
+.carousel-item.active {
     opacity: 1;
     visibility: visible;
     z-index: 10;
 }
 
 .carousel-control-prev {
-     z-index: 20;
+    z-index: 20;
 }
-
 
 .carousel-control-next {
-     z-index: 20;
+    z-index: 20;
 }
 
-.carousel-indicators{
+.carousel-indicators {
     z-index: 20;
 }
 
 .content-container {
-    margin-top : 40px;
-  }
-  
-  .content-container ul {
-    margin : 5px;
-  }
-  
-  .content-container li {
-    margin : 10px;
-  }
+    margin-top: 40px;
+}
 
+.content-container ul {
+    margin: 5px;
+}
 
-  mat-card {
-    margin : 100px;
-  }
- 
-  .form {
-    padding : 10px;
+.content-container li {
+    margin: 10px;
+}
+
+mat-card {
+    margin: 100px;
+}
+
+.form {
+    padding: 10px;
     text-align: center;
-  }
- 
-  .form mat-form-field {
-    margin : 10px;
-  }
+}
+
+.form mat-form-field {
+    margin: 10px;
+}

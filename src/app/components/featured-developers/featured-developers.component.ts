@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./featured-developers.component.css']
 })
 export class FeaturedDevelopersComponent implements OnInit {
-
+  itemsPerSlide = 5;
+  singleSlideOffset = true;
   properties = [
     {
       city : "Karachi",

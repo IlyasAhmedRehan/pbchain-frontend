@@ -29,9 +29,20 @@
 
 <div class="hor">
     <mat-card-title class="text-uppercase font-weight-bold mt-5 mb-4">Featured Properties</mat-card-title>
-    <div fxLayout="row" fxLayoutGap="15px" class="scroll">
+    <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="singleSlideOffset" [startFromIndex]="6" [interval]="false">
+        <slide *ngFor="let p of properties">
+            <!-- <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+            <div class="carousel-caption">
+                <h4>Slide {{index}}</h4>
+            </div> -->
+            <div>
+                <app-p-listing [PDetails]="p"></app-p-listing>
+            </div>
+        </slide>
+    </carousel>
+    <!-- <div fxLayout="row" fxLayoutGap="15px" class="scroll">
         <div *ngFor="let p of properties">
             <app-p-listing [PDetails]="p"></app-p-listing>
         </div>
-    </div>
+    </div> -->
 </div>

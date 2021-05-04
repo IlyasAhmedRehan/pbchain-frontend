@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturedAgencyComponent implements OnInit {
 
+  itemsPerSlide = 5;
+  singleSlideOffset = true;
+  
   properties = [
     {
       city : "Karachi",

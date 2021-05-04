@@ -34,3 +34,20 @@
     margin: 0;
     margin-right: 30px;
 }
+
+.carousel-item {
+    margin-right: auto;
+}
+
+::ng-deep .carousel-control-next,
+::ng-deep .carousel-control-prev {
+    width: 5%;
+}
+
+::ng-deep .carousel-control-next:hover,
+::ng-deep .carousel-control-prev:hover {
+    /* width: 5%; */
+    background: #d27e04;
+    opacity: .7;
+    cursor: pointer;
+}
